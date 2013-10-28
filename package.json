@@ -1,0 +1,28 @@
+{
+    "name":         "mongoose-uniqueid",
+    "version":      "0.0.1",
+    "description":  "Mongoose UniqueId: unique _id's accross models",
+    "author":       "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
+    "main":         "./lib/index",
+
+    "scripts": {
+        "test": "./node_modules/.bin/mocha test/* -R spec"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yamadapc/mongoose-parent-acl.git"
+    },
+
+    "dependencies": {
+        "underscore": "latest",
+        "mongoose": ">= 3.1.0",
+        "async": "latest"
+    },
+
+    "devDependencies": {
+        "mocha": ">= 1.4.1",
+        "sinon": ">= 1.4.2",
+        "supertest": "latest"
+    }
+}
