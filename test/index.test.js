@@ -18,7 +18,7 @@ describe('uniqueId', function() {
   before(function() {
     var TestSchema = new Schema({}, { _id: false });
     TestSchema.plugin(uniqueId.plugin, {
-      collections: ['Test']
+      models: ['Test']
     });
     Test = mongoose.model('Test', TestSchema);
   });

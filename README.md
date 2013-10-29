@@ -14,7 +14,7 @@ var mongoose = require('mongoose'),
 var UserSchema = new Schema({}, {_id: false});
 
 UserSchema.plugin(uniqueid, {
-  collections: ['users', 'organizations']
+  models: ['users', 'organizations']
 });
 
 var OrganizationSchema = new Schema({}, {_id: false});
