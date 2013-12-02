@@ -24,6 +24,7 @@
     },
 
     "devDependencies": {
+        "mongoose": "3.8.*",
         "mocha": "latest",
         "should": "latest",
         "quickcheck": "latest"
