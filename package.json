@@ -1,30 +1,25 @@
 {
-    "name":         "mongoose-uniqueid",
-    "version":      "0.0.5",
-    "description":  "Mongoose UniqueId: A plugin that provides, unique \"_id's\" accross models",
-    "author":       "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
-    "main":         "./lib/index",
-
+    "name": "mongoose-uniqueid",
+    "version": "0.0.5",
+    "description": "Mongoose UniqueId: A plugin that provides, unique \"_id's\" accross models",
+    "author": "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
+    "main": "./lib/index",
     "scripts": {
         "test": "./node_modules/.bin/mocha test/* -R spec"
     },
-
     "repository": {
         "type": "git",
         "url": "git://github.com/yamadapc/mongoose-uniqueid.git"
     },
-
     "dependencies": {
         "underscore": "1.5.2",
         "async": "0.2.9"
     },
-
     "peerDependencies": {
         "mongoose": "*"
     },
-
     "devDependencies": {
-        "mongoose": "3.8.*",
+        "mongoose": "4.4.2",
         "mocha": "latest",
         "should": "latest",
         "quickcheck": "latest"
