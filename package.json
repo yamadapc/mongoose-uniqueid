@@ -1,32 +1,45 @@
 {
-    "name":         "mongoose-uniqueid",
-    "version":      "0.0.5",
-    "description":  "Mongoose UniqueId: A plugin that provides, unique \"_id's\" accross models",
-    "author":       "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
-    "main":         "./lib/index",
-
-    "scripts": {
-        "test": "./node_modules/.bin/mocha test/* -R spec"
-    },
-
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/yamadapc/mongoose-uniqueid.git"
-    },
-
-    "dependencies": {
-        "underscore": "1.5.2",
-        "async": "0.2.9"
-    },
-
-    "peerDependencies": {
-        "mongoose": "*"
-    },
-
-    "devDependencies": {
-        "mongoose": "3.8.*",
-        "mocha": "latest",
-        "should": "latest",
-        "quickcheck": "latest"
+  "name": "mongoose-uniqueid",
+  "version": "0.0.5",
+  "description": "Mongoose UniqueId: A plugin that provides, unique \"_id's\" accross models",
+  "author": "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
+  "license": "MIT",
+  "main": "./lib/index",
+  "scripts": {
+    "test": " mocha --require blanket -R mocha-spec-cov-alt",
+    "test-html-cov": "mocha --require blanket -R html-cov > coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yamadapc/mongoose-uniqueid.git"
+  },
+  "dependencies": {
+    "underscore": "1.5.2",
+    "async": "0.2.9"
+  },
+  "peerDependencies": {
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "blanket": "1.1.7",
+    "mocha": "^2.4.5",
+    "mocha-spec-cov-alt": "^1.1.1",
+    "mongoose": "^4.4.3",
+    "quickcheck": "latest",
+    "should": "latest"
+  },
+  "config": {
+    "blanket": {
+      "data-cover-never": [
+        "node_modules"
+      ],
+      "pattern": [
+        "lib"
+      ],
+      "spec-cov": {
+        "threshold": 80,
+        "localThreshold": 80
+      }
     }
+  }
 }
