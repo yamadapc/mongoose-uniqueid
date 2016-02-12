@@ -30,7 +30,7 @@ describe('uniqueId', function() {
     });
 
     it('shouldn\'t imediatelly attach an _id', function() {
-      doc.should.not.have.property('_id');
+      should.not.exist(doc._id);
     });
 
     it('should attach an _id on save', function(done) {
@@ -38,6 +38,7 @@ describe('uniqueId', function() {
         should.not.exist(err);
         should.exist(doc);
         doc.should.have.property('_id');
+        should.exist(doc._id);
         done();
       });
     });
