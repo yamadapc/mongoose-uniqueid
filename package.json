@@ -1,6 +1,6 @@
 {
   "name": "mongoose-uniqueid",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Mongoose UniqueId: A plugin that provides, unique \"_id's\" accross models",
   "author": "Pedro Tacla Yamada <tacla.yamada@gmail.com>",
   "license": "MIT",
